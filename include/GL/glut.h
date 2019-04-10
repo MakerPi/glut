@@ -8,10 +8,12 @@
    program is -not- in the public domain. */
 
 #if defined(_WIN32)
+/*
 #ifdef __MINGW32__
 #define APIENTRY __stdcall
 #define CALLBACK __stdcall
 #endif
+*/
 /* GLUT 3.7 now tries to avoid including <windows.h>
    to avoid name space pollution, but Win32's <GL/gl.h> 
    needs APIENTRY and WINGDIAPI defined properly. */

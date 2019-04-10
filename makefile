@@ -2,7 +2,7 @@ all: lib/glut/glut32.dll lib/glut/libglut32.a
 	
 
 lib/glut/glut32.dll lib/glut/libglut32.a: lib/glut/glut_8x13.o lib/glut/glut_9x15.o lib/glut/glut_bitmap.o lib/glut/glut_bwidth.o lib/glut/glut_cindex.o lib/glut/glut_cmap.o lib/glut/glut_cursor.o lib/glut/glut_dials.o lib/glut/glut_dstr.o lib/glut/glut_event.o lib/glut/glut_ext.o lib/glut/glut_fcb.o lib/glut/glut_fullscrn.o lib/glut/glut_gamemode.o lib/glut/glut_get.o lib/glut/glut_glxext.o lib/glut/glut_hel10.o lib/glut/glut_hel12.o lib/glut/glut_hel18.o lib/glut/glut_init.o lib/glut/glut_input.o lib/glut/glut_joy.o lib/glut/glut_key.o lib/glut/glut_keyctrl.o lib/glut/glut_keyup.o lib/glut/glut_mesa.o lib/glut/glut_modifier.o lib/glut/glut_mroman.o lib/glut/glut_overlay.o lib/glut/glut_roman.o lib/glut/glut_shapes.o lib/glut/glut_space.o lib/glut/glut_stroke.o lib/glut/glut_swap.o lib/glut/glut_swidth.o lib/glut/glut_tablet.o lib/glut/glut_teapot.o lib/glut/glut_tr10.o lib/glut/glut_tr24.o lib/glut/glut_util.o lib/glut/glut_vidresize.o lib/glut/glut_warp.o lib/glut/glut_win.o lib/glut/glut_winmisc.o lib/glut/win32_glx.o lib/glut/win32_menu.o lib/glut/win32_util.o lib/glut/win32_winproc.o lib/glut/win32_x11.o lib/glut/resources.o
-	gcc -shared -o lib/glut/glut32.dll lib/glut/glut_8x13.o lib/glut/glut_9x15.o lib/glut/glut_bitmap.o lib/glut/glut_bwidth.o lib/glut/glut_cindex.o lib/glut/glut_cmap.o lib/glut/glut_cursor.o lib/glut/glut_dials.o lib/glut/glut_dstr.o lib/glut/glut_event.o lib/glut/glut_ext.o lib/glut/glut_fcb.o lib/glut/glut_fullscrn.o lib/glut/glut_gamemode.o lib/glut/glut_get.o lib/glut/glut_glxext.o lib/glut/glut_hel10.o lib/glut/glut_hel12.o lib/glut/glut_hel18.o lib/glut/glut_init.o lib/glut/glut_input.o lib/glut/glut_joy.o lib/glut/glut_key.o lib/glut/glut_keyctrl.o lib/glut/glut_keyup.o lib/glut/glut_mesa.o lib/glut/glut_modifier.o lib/glut/glut_mroman.o lib/glut/glut_overlay.o lib/glut/glut_roman.o lib/glut/glut_shapes.o lib/glut/glut_space.o lib/glut/glut_stroke.o lib/glut/glut_swap.o lib/glut/glut_swidth.o lib/glut/glut_tablet.o lib/glut/glut_teapot.o lib/glut/glut_tr10.o lib/glut/glut_tr24.o lib/glut/glut_util.o lib/glut/glut_vidresize.o lib/glut/glut_warp.o lib/glut/glut_win.o lib/glut/glut_winmisc.o lib/glut/win32_glx.o lib/glut/win32_menu.o lib/glut/win32_util.o lib/glut/win32_winproc.o lib/glut/win32_x11.o lib/glut/resources.o -mthreads -O3 -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -lwinmm -lglu32 -lopengl32 -enable-auto-import -Wl,--out-implib,lib/glut/libglut32.a
+	gcc -shared -o lib/glut/glut32.dll lib/glut/glut_8x13.o lib/glut/glut_9x15.o lib/glut/glut_bitmap.o lib/glut/glut_bwidth.o lib/glut/glut_cindex.o lib/glut/glut_cmap.o lib/glut/glut_cursor.o lib/glut/glut_dials.o lib/glut/glut_dstr.o lib/glut/glut_event.o lib/glut/glut_ext.o lib/glut/glut_fcb.o lib/glut/glut_fullscrn.o lib/glut/glut_gamemode.o lib/glut/glut_get.o lib/glut/glut_glxext.o lib/glut/glut_hel10.o lib/glut/glut_hel12.o lib/glut/glut_hel18.o lib/glut/glut_init.o lib/glut/glut_input.o lib/glut/glut_joy.o lib/glut/glut_key.o lib/glut/glut_keyctrl.o lib/glut/glut_keyup.o lib/glut/glut_mesa.o lib/glut/glut_modifier.o lib/glut/glut_mroman.o lib/glut/glut_overlay.o lib/glut/glut_roman.o lib/glut/glut_shapes.o lib/glut/glut_space.o lib/glut/glut_stroke.o lib/glut/glut_swap.o lib/glut/glut_swidth.o lib/glut/glut_tablet.o lib/glut/glut_teapot.o lib/glut/glut_tr10.o lib/glut/glut_tr24.o lib/glut/glut_util.o lib/glut/glut_vidresize.o lib/glut/glut_warp.o lib/glut/glut_win.o lib/glut/glut_winmisc.o lib/glut/win32_glx.o lib/glut/win32_menu.o lib/glut/win32_util.o lib/glut/win32_winproc.o lib/glut/win32_x11.o lib/glut/resources.o -mthreads -O3 -lkernel32 -luser32 -lgdi32 -lwinspool -lcomdlg32 -ladvapi32 -lshell32 -lole32 -loleaut32 -luuid -lodbc32 -lodbccp32 -lwinmm -lglu32 -lopengl32 -Wl,--out-implib,"lib/glut/libglut32.a"
 
 lib/glut/glut_8x13.o: lib/glut/glut_8x13.c lib/glut/glutbitmap.h
 	gcc -c -o lib/glut/glut_8x13.o lib/glut/glut_8x13.c -mthreads -O3 -Iinclude -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS -D_USRDLL -DGLUT32_EXPORTS -UGLUT_USE_SGI_OPENGL
@@ -152,7 +152,7 @@ lib/glut/win32_x11.o: lib/glut/win32_x11.c lib/glut/glutint.h
 	gcc -c -o lib/glut/win32_x11.o lib/glut/win32_x11.c -mthreads -O3 -Iinclude -DWIN32 -DNDEBUG -D_WINDOWS -D_MBCS -D_USRDLL -DGLUT32_EXPORTS -UGLUT_USE_SGI_OPENGL
 
 lib/glut/resources.o: lib/glut/glut.rc lib/glut/glut.ico
-	windres lib/glut/glut.rc lib/glut/resources.o
+	windres "lib/glut/glut.rc" "lib/glut/resources.o"
 
 lib/glut/glutbitmap.h: include/GL/glut.h
 	
@@ -185,13 +185,13 @@ include/GL/glut.h:
 	
 
 install: lib/glut/glut32.dll lib/glut/libglut32.a
-	cp lib/glut/glut32.dll /mingw/bin/glut32.dll
-	cp include/GL/glut.h /mingw/include/GL/glut.h
-	cp lib/glut/libglut32.a /mingw/lib/libglut32.a
-
-test: install
-	g++ -o progs/mesademos/gears.exe progs/mesademos/gears.c -mthreads -std=c++0x -O3 -lglut32 -lopengl32 -lglu32 -mwindows -enable-auto-import
-	progs/mesademos/gears.exe
+	mkdir -p build && mkdir -p build/bin && mkdir -p build/lib && mkdir -p build/include && mkdir -p build/include/GL
+	cp include/GL/glut.h build/bin/glut32.dll
+	cp lib/glut/libglut32.a build/include/GL/glut.h
+	cp lib/glut/glut32.dll build/lib/libglut32.a
+test: install
+	g++ -o progs/mesademos/gears.exe progs/mesademos/gears.c -mthreads -std=c++0x -O3 -lglut32 -lopengl32 -lglu32 -mwindows -I"include/"
+	$(shell pwd)/progs/mesademos/gears.exe
 
 uninstall:
 	rm --force --verbose /mingw/bin/glut32.dll
@@ -200,4 +200,4 @@ uninstall:
 
 clean:
 	rm --force --verbose lib/glut/*.dll lib/glut/*.a lib/glut/*.o 
-	rm --force --verbose progs/mesademos/*.exe
+	rm --force --verbose progs/mesademos/*.exe && rm -rf build
