@@ -18,7 +18,7 @@ typedef MINMAXINFO* LPMINMAXINFO;
 
 #ifdef _WIN32
 #include <assert.h>
-#include <crtdbg.h>
+//#include <crtdbg.h>
 #include <windowsx.h>
 #include <mmsystem.h>  /* Win32 Multimedia API header. */
 #endif
