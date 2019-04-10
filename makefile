@@ -186,9 +186,9 @@ include/GL/glut.h:
 
 install: lib/glut/glut32.dll lib/glut/libglut32.a
 	mkdir -p build && mkdir -p build/bin && mkdir -p build/lib && mkdir -p build/include && mkdir -p build/include/GL
-	cp include/GL/glut.h build/bin/glut32.dll
-	cp lib/glut/libglut32.a build/include/GL/glut.h
-	cp lib/glut/glut32.dll build/lib/libglut32.a
+	cp lib/glut/glut32.dll build/bin/glut32.dll
+	cp include/GL/glut.h build/include/GL/glut.h
+	cp lib/glut/libglut32.a build/lib/libglut32.a
 test: install
 	g++ -o progs/mesademos/gears.exe progs/mesademos/gears.c -mthreads -std=c++0x -O3 -lglut32 -lopengl32 -lglu32 -mwindows -I"include/"
 	$(shell pwd)/progs/mesademos/gears.exe
