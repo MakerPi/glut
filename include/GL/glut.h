@@ -59,6 +59,7 @@ typedef unsigned short wchar_t;
 
 /* To disable automatic library usage for GLUT, define GLUT_NO_LIB_PRAGMA
    in your compile preprocessor options. */
+#ifndef __MINGW32__
 # if !defined(GLUT_BUILDING_LIB) && !defined(GLUT_NO_LIB_PRAGMA)
 #  pragma comment (lib, "winmm.lib")      /* link with Windows MultiMedia lib */
 /* To enable automatic SGI OpenGL for Windows library usage for GLUT,
@@ -81,7 +82,7 @@ typedef unsigned short wchar_t;
 #  pragma warning (disable:4244)  /* Disable bogus VC++ 4.2 conversion warnings. */
 #  pragma warning (disable:4305)  /* VC++ 5.0 version of above warning. */
 # endif
-
+#endif
 /* Win32 has an annoying issue where there are multiple C run-time
    libraries (CRTs).  If the executable is linked with a different CRT
    from the GLUT DLL, the GLUT DLL will not share the same CRT static
